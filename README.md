@@ -5,9 +5,9 @@ For Any Competitive Exams
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bihar Geography 100 MCQs Mock Test - 20 Minutes</title>
+  <title>BPSC Bihar Geography 100 Standard MCQs - 20 Minutes</title>
 
-  <!-- EmailJS Library (GitHub Pages Compatible) -->
+  <!-- EmailJS Library for direct lead routing -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <style>
@@ -27,8 +27,8 @@ For Any Competitive Exams
       margin: 0 auto;
     }
 
-    /* Top Promo Banner */
-    .promo-banner {
+    /* Top Banner */
+    .top-header {
       background: #0d0d0d;
       border: 2px solid #262626;
       border-radius: 16px;
@@ -36,7 +36,7 @@ For Any Competitive Exams
       text-align: center;
       margin-bottom: 24px;
     }
-    .promo-badge {
+    .badge {
       display: inline-block;
       background: #1e3a8a;
       border: 1px solid #3b82f6;
@@ -47,39 +47,26 @@ For Any Competitive Exams
       border-radius: 50px;
       margin-bottom: 12px;
     }
-    .promo-title {
+    .title {
       font-size: 40px;
       line-height: 1.35;
       font-weight: 800;
       margin-bottom: 10px;
       color: #ffffff;
     }
-    .promo-title span { color: #38bdf8; }
-    .promo-desc {
+    .title span { color: #38bdf8; }
+    .desc {
       font-size: 24px;
       line-height: 1.5;
       color: #cbd5e1;
-      max-width: 820px;
-      margin: 0 auto 18px;
+      max-width: 860px;
+      margin: 0 auto 16px;
     }
-    .promo-btn {
-      display: inline-block;
-      background: #16a34a;
-      color: #ffffff;
-      font-size: 30px;
-      font-weight: 800;
-      text-decoration: none;
-      padding: 14px 32px;
-      border-radius: 12px;
-      border: 2px solid #22c55e;
-      transition: background-color 0.2s ease;
-    }
-    .promo-btn:hover { background: #15803d; }
-    .promo-features {
+    .features {
       display: flex;
       justify-content: center;
       gap: 24px;
-      margin-top: 16px;
+      margin-top: 14px;
       font-size: 22px;
       color: #94a3b8;
       flex-wrap: wrap;
@@ -128,7 +115,7 @@ For Any Competitive Exams
       padding: 6px 18px; border-radius: 8px; border: 2px solid #eab308;
     }
     .stats { display: flex; gap: 12px; font-size: 24px; }
-    .badge { padding: 6px 16px; border-radius: 8px; font-weight: 700; }
+    .badge-stat { padding: 6px 16px; border-radius: 8px; font-weight: 700; }
     .badge-tot { background: #1e40af; }
     .badge-cor { background: #15803d; }
     .badge-wro { background: #b91c1c; }
@@ -141,7 +128,7 @@ For Any Competitive Exams
     }
     .palette-grid {
       display: none; background: #09090b; padding: 16px; border-radius: 12px; margin-bottom: 20px;
-      max-height: 240px; overflow-y: auto; border: 2px solid #27272a;
+      max-height: 250px; overflow-y: auto; border: 2px solid #27272a;
       grid-template-columns: repeat(auto-fill, minmax(56px, 1fr)); gap: 8px;
     }
     .palette-grid.active { display: grid; }
@@ -153,14 +140,14 @@ For Any Competitive Exams
     .pal-btn.correct { background: #15803d; border-color: #22c55e; }
     .pal-btn.wrong { background: #b91c1c; border-color: #ef4444; }
 
-    /* Question Card - STRICT RED COLOR & 36PX FONT */
+    /* Question Card - Strict Red & 36px Font */
     .card {
       background: #0d0d0d; padding: 32px; border-radius: 16px; border: 2px solid #262626;
       margin-bottom: 24px;
     }
     .q-head {
       font-weight: 800;
-      color: #f87171 !important; /* Light Red */
+      color: #f87171 !important;
       margin-bottom: 16px;
       font-size: 32px;
     }
@@ -169,7 +156,7 @@ For Any Competitive Exams
       line-height: 1.5;
       margin-bottom: 28px;
       white-space: pre-line;
-      color: #ef4444 !important; /* RED QUESTION TEXT */
+      color: #ef4444 !important;
       font-weight: 800;
     }
     .options { display: flex; flex-direction: column; gap: 18px; }
@@ -189,7 +176,7 @@ For Any Competitive Exams
     .opt-btn.correct { background: #14532d !important; border-color: #22c55e !important; color: #ffffff !important; font-weight: 800; }
     .opt-btn.wrong { background: #7f1d1d !important; border-color: #ef4444 !important; color: #ffffff !important; font-weight: 800; }
 
-    /* Detailed Explanation Box - Strict 36px */
+    /* Detailed Explanation Box */
     .explanation-card {
       display: none;
       margin-top: 28px;
@@ -227,33 +214,27 @@ For Any Competitive Exams
 
 <div class="wrapper">
 
-  <!-- ================= TOP PROMO BANNER ================= -->
-  <div class="promo-banner">
-    <div class="promo-badge">Bihar Geography Special Mock Test</div>
-    <h1 class="promo-title">
-      Ctet ki achi taiyari ke liye <br>
-      <span>Free test de</span>
+  <!-- ================= TOP BANNER ================= -->
+  <div class="top-header">
+    <div class="badge">BPSC Special Geography Series</div>
+    <h1 class="title">
+      Bihar Geography 100 Standard MCQs <br>
+      <span>BPSC Level Online Mock Test</span>
     </h1>
-    <p class="promo-desc">
-      Bihar Geography ke 100 Mahatvapurna Questions (20 Minutes Timer) Red Question Text aur Detailed Explanation ke sath lagayein.
+    <p class="desc">
+      BPSC ke kade manakon par aadharit 100 alag-alag prashn (Geological Structure, Soil, River Basin, Climate, Forests, Minerals) 20 minute live timer aur vistrit samadhan ke sath.
     </p>
-    <a href="https://urdufor10th-png.github.io/CDP-MOCK-TEST-100-QUESTION-/" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       class="promo-btn">
-      👉 Start Free Test Now
-    </a>
-    <div class="promo-features">
-      <span>✔ 20 Minutes Live Countdown</span>
-      <span>✔ Red Color Question Text (36px)</span>
-      <span>✔ GitHub Pages Ready Single-File</span>
+    <div class="features">
+      <span>⏱ 20 Minutes Countdown</span>
+      <span>🔴 Red Color Question (36px)</span>
+      <span>💡 100 Unique Standard Explanations</span>
     </div>
   </div>
 
   <!-- ================= 1. REGISTRATION GATE ================= -->
   <div id="gate-view" class="gate-card">
-    <h2>Student Verification</h2>
-    <p>Test shuru karne ke liye apna vivaran bharein</p>
+    <h2>Aspirant Verification</h2>
+    <p>Test prarambh karne ke liye apna vivaran darj karein</p>
 
     <div class="form-group">
       <label>Pura Naam (Full Name)</label>
@@ -269,7 +250,7 @@ For Any Competitive Exams
     </div>
 
     <div class="form-group" id="otp-field" style="display: none;">
-      <label>Darj Karein OTP (Enter OTP)</label>
+      <label>Darj Karein OTP</label>
       <input type="text" id="u_otp" maxlength="4" placeholder="4 ankon ka OTP">
       <small id="otp-hint" style="color: #ef4444; display: block; margin-top: 8px; font-size: 22px;"></small>
     </div>
@@ -281,7 +262,7 @@ For Any Competitive Exams
 
     <div class="form-group">
       <label>Zila (District)</label>
-      <input type="text" id="u_district" placeholder="Jaise: Patna, Samastipur, Gaya">
+      <input type="text" id="u_district" placeholder="Jaise: Patna, Gaya, Samastipur">
     </div>
 
     <button class="btn-submit" id="btn-start" onclick="handleVerifyAndStart()">Verify & Start 20-Min Test</button>
@@ -292,14 +273,14 @@ For Any Competitive Exams
   <div id="test-view">
     <header>
       <div>
-        <h1 style="font-size:30px; color: #ef4444;">Bihar Geography 100 MCQs</h1>
+        <h1 style="font-size:30px; color: #ef4444;">BPSC Bihar Geography (100 MCQs)</h1>
         <small id="user-display" style="opacity: 0.9; font-size: 22px; color: #f87171;"></small>
       </div>
       <div class="timer-box" id="timer-display">⏱ 20:00</div>
       <div class="stats">
-        <span class="badge badge-tot" id="stat-q">Q: 1/100</span>
-        <span class="badge badge-cor" id="stat-cor">Correct: 0</span>
-        <span class="badge badge-wro" id="stat-wro">Wrong: 0</span>
+        <span class="badge-stat badge-tot" id="stat-q">Q: 1/100</span>
+        <span class="badge-stat badge-cor" id="stat-cor">Correct: 0</span>
+        <span class="badge-stat badge-wro" id="stat-wro">Wrong: 0</span>
       </div>
     </header>
 
@@ -313,7 +294,7 @@ For Any Competitive Exams
       
       <!-- Detailed Explanation Box -->
       <div class="explanation-card" id="exp-box">
-        <div class="exp-title">💡 Vistrit Vyakhya (Explanation):</div>
+        <div class="exp-title">💡 Vistrit Vishleshan (Detailed Explanation):</div>
         <div class="exp-text" id="exp-text"></div>
       </div>
     </div>
@@ -349,7 +330,7 @@ function handleSendOTP() {
   }
   generatedOTP = Math.floor(1000 + Math.random() * 9000).toString();
   document.getElementById("otp-field").style.display = "block";
-  document.getElementById("otp-hint").innerText = `(Testing ke liye aapka OTP: ${generatedOTP})`;
+  document.getElementById("otp-hint").innerText = `(Testing ke liye OTP: ${generatedOTP})`;
   alert(`Aapka OTP hai: ${generatedOTP}`);
   document.getElementById("btn-otp").innerText = "Resend OTP";
 }
@@ -372,7 +353,7 @@ function handleVerifyAndStart() {
   }
 
   statusMsg.style.color = "#ef4444";
-  statusMsg.innerText = "Data send ho raha hai...";
+  statusMsg.innerText = "Data email par bheja ja raha hai...";
   document.getElementById("btn-start").disabled = true;
 
   const templateParams = {
@@ -392,9 +373,9 @@ function handleVerifyAndStart() {
   }
 }
 
-/* ================= 20-MINUTE COUNTDOWN TIMER ================= */
+/* ================= 20-MINUTE TIMER ================= */
 let timerInterval = null;
-let timeLeft = 20 * 60; // 20 minutes in seconds
+let timeLeft = 20 * 60;
 
 function startTimer() {
   const display = document.getElementById("timer-display");
@@ -405,13 +386,13 @@ function startTimer() {
     display.innerText = `⏱ ${minutes < 10 ? "0" + minutes : minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
 
     if (timeLeft <= 300) {
-      display.style.color = "#ef4444"; // Last 5 mins red
+      display.style.color = "#ef4444";
       display.style.borderColor = "#ef4444";
     }
 
     if (timeLeft <= 0) {
       clearInterval(timerInterval);
-      alert("Samay samapt ho gaya! Aapka test auto-submit kiya ja raha hai.");
+      alert("Samay samapt! Aapka test auto-submit kiya ja raha hai.");
       showFinalResult();
     }
   }, 1000);
@@ -420,181 +401,37 @@ function startTimer() {
 function startTest(studentName) {
   document.getElementById("gate-view").style.display = "none";
   document.getElementById("test-view").style.display = "block";
-  document.getElementById("user-display").innerText = `Student: ${studentName}`;
+  document.getElementById("user-display").innerText = `Candidate: ${studentName}`;
   initPalette();
   loadQuestion();
   startTimer();
 }
 
-/* ================= 100 BIHAR GEOGRAPHY QUESTIONS ================= */
-const questions = [];
+/* ================= 100 DISTINCT BPSC LEVEL QUESTIONS ================= */
+const rawData = [
+  // 1-10: Geological Structure & Boundaries
+  ["बिहार के भूगर्भीय संरचना में प्राचीनतम शैल समूह निम्नलिखित में से कौन सा है?", "विंध्यन शैल समूह", "धारवाड़ शैल समूह", "टर्शियरी शैल समूह", "क्वार्टनरी शैल समूह", "b", "बिहार के दक्षिण-पूर्व (मुंगेर, जमुई, नवादा) में स्थित धारवाड़ शैल समूह प्री-कैम्ब्रियन काल की सबसे प्राचीन संरचना है, जबकि विंध्यन शैल दक्षिण-पश्चिम (कैमूर, रोहतास) में पाए जाते हैं।"],
+  ["बिहार के किस भू-आकृतिक प्रदेश में कैमूर का पठार विस्तृत है?", "धारवाड़ क्रम", "विंध्यन क्रम", "गोंडवाना क्रम", "टर्शियरी क्रम", "b", "कैमूर और रोहतास जिले में विंध्यन क्रम के चूना पत्थर, बलुआ पत्थर और शेल पाए जाते हैं, जो भवन निर्माण सामग्री के मुख्य स्रोत हैं।"],
+  ["बिहार के उत्तरी-पश्चिमी भाग में स्थित 'सोमेश्वर श्रेणी' का निर्माण किस भूवैज्ञानिक काल में हुआ था?", "कार्बोनिफेरस युग", "प्लायस्टोसीन (टर्शियरी) काल", "जुरासिक काल", "क्रिटेशियस काल", "b", "पश्चिम चंपारण की सोमेश्वर और दून श्रेणी नवीन वलित शिवालिक पर्वत का विस्तार हैं, जिसका निर्माण तृतीयक (टर्शियरी/प्लायस्टोसीन) काल में हुआ था।"],
+  ["बिहार का मैदानी भाग (गंगा का मैदान) भू-वैज्ञानिक दृष्टि से किस श्रेणी में आता है?", "प्रायद्वीपीय शील्ड", "अग्रगर्त (Foredeep / क्वार्टनरी निक्षेप)", "गोंडवाना भ्रंश", "रिफ्ट घाटी", "b", "गंगा का मैदान वास्तव में हिमालय के निर्माण के दौरान बने एक विशाल गर्त (Geosyncline) में नदियों द्वारा लाए गए अवसादों के जमाव से बना है।"],
+  ["बिहार का अक्षांशीय विस्तार (Latitudinal Span) निम्नलिखित में से कितना है?", "24°20'10\" N से 27°31'15\" N", "21°58'10\" N से 25°12'15\" N", "23°25'00\" N से 28°10'15\" N", "22°15'10\" N से 26°30'15\" N", "a", "बिहार राज्य 24°20'10\" उत्तरी अक्षांश से 27°31'15\" उत्तरी अक्षांश के मध्य स्थित है, जिसका कुल अक्षांशीय फैलाव लगभग 3°11'05\" है।"],
+  ["बिहार का कुल देशांतरीय विस्तार (Longitudinal Span) कितना है?", "80°10'50\" E से 85°12'40\" E", "83°19'50\" E से 88°17'40\" E", "82°30'00\" E से 89°15'00\" E", "84°10'20\" E से 90°12'10\" E", "b", "बिहार 83°19'50\" पूर्वी देशांतर (कैमूर) से 88°17'40\" पूर्वी देशांतर (किशनगंज) तक विस्तृत है, जिसका कुल देशांतरीय अंतर लगभग 4°57'50\" है।"],
+  ["बिहार की औसत समुद्र तल से ऊंचाई (Mean Sea Level Height) लगभग कितनी है?", "150 फीट", "173 फीट (लगभग 53 मीटर)", "225 फीट", "260 फीट", "b", "सर्वे ऑफ इंडिया के अनुसार बिहार के मैदानी भाग की समुद्र तल से औसत ऊंचाई लगभग 53 मीटर यानी 173 फीट है।"],
+  ["गंगा नदी बिहार राज्य को लगभग कितने प्रतिशत क्षेत्र में विभाजित करती है?", "उत्तरी मैदान (लगभग 62%) तथा दक्षिणी मैदान (लगभग 38%)", "उत्तरी मैदान (50%) तथा दक्षिणी मैदान (50%)", "उत्तरी मैदान (40%) तथा दक्षिणी मैदान (60%)", "उत्तरी मैदान (75%) तथा दक्षिणी मैदान (25%)", "a", "बिहार के कुल 94,163 वर्ग किमी क्षेत्रफल में उत्तरी मैदान लगभग 56,980 वर्ग किमी (62%) और दक्षिणी मैदान लगभग 33,670 वर्ग किमी में विस्तृत है।"],
+  ["नेपाल के साथ बिहार की अंतरराष्ट्रीय सीमा की कुल लंबाई लगभग कितनी है?", "601 किमी", "729 किमी", "812 किमी", "650 किमी", "b", "बिहार की नेपाल से लगी अंतरराष्ट्रीय सीमा रेखा लगभग 726 से 729 किमी लंबी है, जिसे 'ओपन बॉर्डर' कहा जाता है।"],
+  ["बिहार का वह एकमात्र जिला कौन सा है जिसकी सीमा नेपाल और उत्तर प्रदेश दोनों से स्पर्श करती है?", "गोपालगंज", "पश्चिम चंपारण", "सीतामढ़ी", "पूर्वी चंपारण", "b", "पश्चिम चंपारण उत्तर में नेपाल से तथा पश्चिम में उत्तर प्रदेश के कुशीनगर और महाराजगंज से सीमा बनाता है।"],
 
-function addQ(id, text, oA, oB, oC, oD, ans, exp) {
-  questions.push({
-    id: id,
-    text: text,
-    opts: [
-      { k: "a", t: "(a) " + oA },
-      { k: "b", t: "(b) " + oB },
-      { k: "c", t: "(c) " + oC },
-      { k: "d", t: "(d) " + oD }
-    ],
-    ans: ans,
-    exp: exp
-  });
-}
+  // 11-20: Drainage System (Rivers)
+  ["गंगा नदी बिहार के कुल 12 जिलों से प्रवाहित होती है। इसकी बिहार में कुल लंबाई कितनी है?", "345 किमी", "445 किमी", "512 किमी", "483 किमी", "b", "गंगा नदी की कुल लंबाई 2525 किमी है, जिसमें से बिहार राज्य में इसकी कुल प्रवाह लंबाई 445 किमी है।"],
+  ["बिहार में गंगा नदी के प्रवाह क्षेत्र में किस जिले में इसकी लंबाई सर्वाधिक है?", "भागलपुर", "पटना (लगभग 99 किमी)", "कटिहार", "बेगूसराय", "b", "गंगा नदी पटना जिले में सर्वाधिक 99 किमी की दूरी तय करती है, इसके बाद दूसरा स्थान भागलपुर (लगभग 97 किमी) का है।"],
+  ["घाघरा (सरयू) नदी बिहार में गंगा नदी से किस स्थान के निकट मिलती है?", "हाजीपुर", "मांझी (छपरा)", "दानापुर", "सोनपुर", "b", "घाघरा नदी उत्तर प्रदेश से प्रवाहित होकर सारण (छपरा) जिले के 'मांझी' नामक स्थान पर गंगा नदी में मिल जाती है।"],
+  ["गंडक नदी का उद्गम नेपाल हिमालय में होता है, जहाँ इसे किस नाम से जाना जाता है?", "नारायणी और सालिग्रामी", "करनाली", "अरुण", "काली गंडकी मात्र", "a", "गंडक नदी को नेपाल के पर्वतीय भागों में सालिग्रामी (शालिग्राम पत्थरों के कारण) तथा तराई मैदान में नारायणी कहा जाता है।"],
+  ["बूढ़ी गंडक (Budhi Gandak) नदी का उद्गम स्थल निम्नलिखित में से कौन सा है?", "अन्नपूर्णा श्रेणी", "चौतरवा चौर (सोमेश्वर पहाड़ी का पश्चिमी ढलान)", "महाभारत श्रेणी", "गोसाईंथान", "b", "बूढ़ी गंडक किसी विदेशी ग्लेशियर से नहीं बल्कि बिहार के पश्चिम चंपारण जिले में सोमेश्वर श्रेणी के 'चौतरवा चौर' विशंभरपुर से निकलती है।"],
+  ["बिहार में सबसे तीव्र गति से जलप्रवाह करने वाली और सर्वाधिक मार्ग बदलने वाली नदी कौन सी है?", "कमला", "कोसी", "बागमती", "महानंदा", "b", "कोसी नदी नेपाल के गोसाईंथान से निकलती है और भारी गाद लाने के कारण अपना मार्ग बदलने के लिए कुख्यात है, जिससे इसे 'बिहार का शोक' कहा जाता है।"],
+  ["बागमती नदी बिहार में प्रवेश करने के उपरांत अंततः किस नदी में समाहित हो जाती है?", "गंगा नदी", "कोसी नदी (अथवा बूढ़ी गंडक की शाखा)", "कमला नदी", "महानंदा", "b", "बागमती नदी सीतामढ़ी के शोरवटिया से प्रवेश करती है और आगे चलकर कमला तथा कोसी नदी प्रणाली में मिल जाती है।"],
+  ["महानंदा नदी बिहार के किस जिले में सर्वप्रथम प्रवेश करती है?", "अररिया", "किशनगंज", "कटिहार", "पूर्णिया", "b", "दार्जिलिंग की महालधिराम पहाड़ियों से निकलकर महानंदा नदी बिहार के किशनगंज जिले में प्रवेश करती है और कटिहार के पास गंगा में मिलती है।"],
+  ["सोन नदी बिहार के किस जिले में सर्वप्रथम प्रवेश करती है?", "बक्सर", "रोहतास", "औरंगाबाद", "भोजपुर", "b", "अमरकंटक से निकलने वाली सोन नदी बिहार के रोहतास जिले में प्रवेश करती है तथा रोहतास और औरंगाबाद के बीच प्राकृतिक सीमा बनाती है।"],
+  ["पुनपुन नदी का उद्गम स्थल किस क्षेत्र में स्थित है?", "छोटा नागपुर पठार (पलामू जिला)", "विंध्याचल पर्वत", "हजारीबाग पठार", "अमरकंटक", "a", "पुनपुन नदी झारखंड के पलामू के चौराहा पहाड़ी क्षेत्र से निकलती है और फतुहा (पटना) में गंगा में मिलती है।"],
 
-// 100 Curated Bihar Geography Questions
-addQ(1, "बिहार राज्य का कुल क्षेत्रफल भारत के कुल क्षेत्रफल का लगभग कितना प्रतिशत है?", "2.42%", "2.86%", "3.12%", "3.45%", "b", "बिहार का कुल भौगोलिक क्षेत्रफल 94,163 वर्ग किमी है, जो भारत के कुल क्षेत्रफल का 2.86% है।");
-addQ(2, "क्षेत्रफल की दृष्टि से भारत के राज्यों में बिहार का कौन सा स्थान है?", "11वाँ", "12वाँ", "13वाँ", "14वाँ", "b", "जम्मू-कश्मीर पुनर्गठन के उपरांत क्षेत्रफल की दृष्टि से बिहार राज्यों में 12वें स्थान पर है।");
-addQ(3, "बिहार का अक्षांशीय विस्तार (Latitudinal Extent) कितना है?", "24°20'10\" N से 27°31'15\" N", "21°15' N से 25°18' N", "23°20' N से 28°30' N", "20°10' N से 26°15' N", "a", "बिहार 24°20'10\" उत्तरी अक्षांश से 27°31'15\" उत्तरी अक्षांश के बीच स्थित है।");
-addQ(4, "बिहार का देशांतरीय विस्तार (Longitudinal Extent) कितना है?", "80°10' E से 85°15' E", "83°19'50\" E से 88°17'40\" E", "82°30' E से 89°20' E", "84°10' E से 90°15' E", "b", "बिहार का देशांतरीय विस्तार 83°19'50\" पूर्वी देशांतर से 88°17'40\" पूर्वी देशांतर तक है।");
-addQ(5, "बिहार की उत्तर से दक्षिण तक अधिकतम लंबाई लगभग कितनी है?", "345 किमी", "483 किमी", "512 किमी", "380 किमी", "a", "बिहार की उत्तर से दक्षिण लंबाई 345 किमी तथा पूर्व से पश्चिम चौड़ाई 483 किमी है।");
-addQ(6, "बिहार की पूर्व से पश्चिम तक अधिकतम चौड़ाई कितनी है?", "345 किमी", "483 किमी", "512 किमी", "420 किमी", "b", "पूर्व से पश्चिम अधिकतम चौड़ाई 483 किमी है।");
-addQ(7, "बिहार की सीमा कुल कितने भारतीय राज्यों को स्पर्श करती है?", "2 राज्य", "3 राज्य", "4 राज्य", "5 राज्य", "b", "बिहार की सीमा 3 राज्यों (उत्तर प्रदेश, पश्चिम बंगाल, झारखंड) और 1 अंतरराष्ट्रीय सीमा (नेपाल) से मिलती है।");
-addQ(8, "नेपाल की सीमा को स्पर्श करने वाले बिहार के कुल जिलों की संख्या कितनी है?", "5", "6", "7", "8", "c", "नेपाल से बिहार के 7 जिले (प. चंपारण, पू. चंपारण, सीतामढ़ी, मधुबनी, सुपौल, अररिया, किशनगंज) स्पर्श करते हैं।");
-addQ(9, "उत्तर प्रदेश की सीमा को स्पर्श करने वाले बिहार के कुल कितने जिले हैं?", "6", "7", "8", "9", "c", "उत्तर प्रदेश की सीमा से कुल 8 जिले (प. चंपारण, गोपालगंज, सिवान, सारण, भोजपुर, बक्सर, कैमूर, रोहतास) लगते हैं।");
-addQ(10, "झारखंड राज्य की सीमा से बिहार के कितने जिले स्पर्श करते हैं?", "6", "7", "8", "9", "c", "झारखंड से 8 जिले (रोहतास, औरंगाबाद, गया, नवादा, जमुई, बांका, भागलपुर, कटिहार) स्पर्श करते हैं।");
-addQ(11, "पश्चिम बंगाल की सीमा को स्पर्श करने वाले बिहार के जिलों की संख्या कितनी है?", "2", "3", "4", "5", "b", "पश्चिम बंगाल से 3 जिले (किशनगंज, पूर्णिया, कटिहार) स्पर्श करते हैं।");
-addQ(12, "बिहार का सबसे उत्तरी जिला निम्नलिखित में से कौन सा है?", "किशनगंज", "पश्चिम चंपारण", "सीतामढ़ी", "सुपौल", "b", "बिहार का सबसे उत्तरी जिला पश्चिम चंपारण है।");
-addQ(13, "बिहार का सबसे दक्षिणी जिला कौन सा है?", "नवादा", "जमुई", "गया", "बांका", "c", "बिहार का सबसे दक्षिणी जिला गया है।");
-addQ(14, "बिहार का सबसे पूर्वी जिला निम्नलिखित में से कौन सा है?", "कटिहार", "पूर्णिया", "किशनगंज", "अररिया", "c", "किशनगंज बिहार का सबसे पूर्वी जिला है।");
-addQ(15, "बिहार का सबसे पश्चिमी जिला कौन सा है?", "बक्सर", "कैमूर (भभुआ)", "रोहतास", "सारण", "b", "कैमूर जिला बिहार का सबसे पश्चिमी बिंदु है।");
-addQ(16, "बिहार की जलवायु किस प्रकार की मानी जाती है?", "भूमध्यरेखीय", "उपोष्णकटिबंधीय मानसूनी जलवायु", "शुष्क मरुस्थलीय", "टुंड्रा", "b", "बिहार की जलवायु संशोधित मानसूनी / उपोष्ण मानसूनी (Cwg) है।");
-addQ(17, "बिहार में सर्वाधिक वर्षा किस मानसून शाखा द्वारा होती है?", "अरब सागर मानसून", "बंगाल की खाड़ी की मानसूनी शाखा", "पश्चिमी विक्षोभ", "लौटता मानसून", "b", "बिहार में लगभग 85% से अधिक वर्षा बंगाल की खाड़ी से आने वाले दक्षिण-पश्चिम मानसून से होती है।");
-addQ(18, "बिहार का सर्वाधिक औसत वार्षिक वर्षा प्राप्त करने वाला जिला कौन सा है?", "पूर्णिया", "कटिहार", "किशनगंज", "पश्चिम चंपारण", "c", "किशनगंज में सबसे अधिक वर्षा (लगभग 180 सेमी से अधिक) होती है।");
-addQ(19, "बिहार का सबसे कम वर्षा वाला जिला कौन सा है?", "कैमूर", "अरवल", "औरंगाबाद", "रोहतास", "c", "औरंगाबाद जिला बिहार में सबसे कम औसत वर्षा प्राप्त करता है।");
-addQ(20, "बिहार का सबसे गर्म और सबसे ठंडा रहने वाला जिला कौन सा है?", "भागलपुर", "गया", "बांका", "पटना", "b", "गया जिला गर्मियों में सर्वाधिक गर्म और सर्दियों में सर्वाधिक ठंडा रहता है।");
-
-// Auto-generating remaining Q21 to Q100 with accurate geography facts
-const geoFacts = [
-  ["सोमेश्वर पहाड़ी श्रेणी की सबसे ऊंची चोटी की ऊंचाई कितनी है?", "874-880 मीटर", "920 मीटर", "750 मीटर", "600 मीटर", "a", "पश्चिम चंपारण में स्थित सोमेश्वर श्रेणी की चोटी लगभग 874-880 मीटर ऊंची है।"],
-  ["गंगा नदी बिहार को कितने मैदानी भागों में विभाजित करती है?", "2 भागों में (उत्तरी और दक्षिणी मैदान)", "3 भागों में", "4 भागों में", "विभाजित नहीं करती", "a", "गंगा नदी बिहार को उत्तरी बिहार का मैदान और दक्षिणी बिहार के मैदान में बांटती है।"],
-  ["बिहार के उत्तरी मैदान में बाढ़ से बने प्राकृतिक गर्तों/झीलों को क्या कहा जाता है?", "दियारा", "चौर या मन (Ox-bow Lake)", "बांगर", "रेह", "b", "उत्तरी मैदान में नदियों के परित्यक्त मार्ग और जलभराव वाले गर्तों को चौर या मन कहा जाता है।"],
-  ["गंगा नदी के किनारे बाढ़ क्षेत्र में उभरी हुई भूमि को स्थानीय भाषा में क्या कहते हैं?", "ताल", "दियारा भूमि", "खादर", "भांभर", "b", "गंगा के किनारे रेत और गाद से बनी नई कछारी भूमि को 'दियारा' कहा जाता है।"],
-  ["बिहार में नई जलोढ़ मिट्टी को किस नाम से जाना जाता है?", "बांगर", "खादर", "बलसुंदरी", "ताल", "b", "प्रतिवर्ष बाढ़ के पानी से नवीनीकृत होने वाली उपजाऊ मिट्टी को खादर कहा जाता है।"],
-  ["बिहार में पुरानी जलोढ़ मिट्टी को स्थानीय स्तर पर क्या कहते हैं?", "खादर", "बांगर (कैलकेरिया)", "तराई", "रेगुर", "b", "बाढ़ के स्तर से ऊपर स्थित पुरानी अप्रभावित जलोढ़ मिट्टी को बांगर कहते हैं।"],
-  ["कावर झील (पक्षी अभयारण्य / रामसर साइट) किस जिले में स्थित है?", "दरभंगा", "बेगूसराय (मंझौल)", "खगड़िया", "सहरसा", "b", "कावर झील एशिया की सबसे बड़ी ताजे पानी की गोखुर झील और बिहार की पहली रामसर आर्द्रभूमि है।"],
-  ["बिहार का एकमात्र राष्ट्रीय उद्यान (National Park) कौन सा है?", "भीमबांध", "वाल्मीकि राष्ट्रीय उद्यान", "कैमूर", "गौतम बुद्ध", "b", "वाल्मीकि राष्ट्रीय उद्यान पश्चिम चंपारण में स्थित बिहार का एकमात्र नेशनल पार्क और टाइगर रिजर्व है।"],
-  ["गौतम बुद्ध पक्षी अभयारण्य बिहार के किस जिले में स्थित है?", "नालंदा", "गया", "नवादा", "मुंगेर", "b", "गौतम बुद्ध वन्यजीव अभयारण्य गया जिले में स्थित है।"],
-  ["ककोलत जलप्रपात (Kakolat Waterfall) बिहार के किस जिले में स्थित है?", "नवादा", "रोहतास", "कैमूर", "जमुई", "a", "ककोलत जलप्रपात नवादा जिले में स्थित 160 फीट ऊंचा प्राकृतिक झरना है।"],
-  ["धुआं कुंड और मंझर कुंड जलप्रपात किस जिले में स्थित हैं?", "गया", "रोहतास (सासाराम)", "कैमूर", "नवादा", "b", "धुआं कुंड और मंझर कुंड जलप्रपात रोहतास जिले में काव नदी पर स्थित हैं।"],
-  ["बिहार में पाइराइट (Pyrite) खनिज का एकमात्र उत्पादक जिला कौन सा है?", "मुंगेर", "रोहतास (अमझोर)", "बांका", "जमुई", "b", "रोहतास का अमझोर क्षेत्र भारत के कुल पाइराइट का लगभग 95% भंडार रखता है।"],
-  ["बिहार के किस जिले में चूना पत्थर (Limestone) प्रचुर मात्रा में पाया जाता है?", "कैमूर और रोहतास", "पटना और सारण", "किशनगंज", "समस्तीपुर", "a", "कैमूर और रोहतास के पठारी भाग में सीमेंट उद्योग के लिए उपयुक्त चूना पत्थर मिलता है।"],
-  ["अभ्रक (Mica) का भंडार बिहार के किन दक्षिणी जिलों में पाया जाता है?", "नवादा, गया और जमुई", "सीतामढ़ी", "गोपालगंज", "बक्सर", "a", "झारखंड सीमा से लगे नवादा, गया और जमुई में अभ्रक की परतें पाई जाती हैं।"],
-  ["बिहार का कौन सा जिला सर्वाधिक वन क्षेत्र (Forest Area in sq km) वाला है?", "पश्चिम चंपारण", "कैमूर (भभुआ)", "रोहतास", "जमुई", "b", "ISFR रिपोर्ट के अनुसार कैमूर जिले में बिहार का सर्वाधिक वन क्षेत्र और प्रतिशत पाया जाता है।"],
-  ["बिहार का न्यूनतम वन क्षेत्र (Minimum Forest Cover) वाला जिला कौन सा है?", "शेखपुरा", "अरवल", "जहानाबाद", "बक्सर", "a", "शेखपुरा जिले में सबसे कम वन क्षेत्र दर्ज किया गया है।"],
-  ["भीमबांध वन्यजीव अभयारण्य (Bhimbandh Sanctuary) किस जिले में स्थित है?", "मुंगेर", "भागलपुर", "जमुई", "बांका", "a", "गर्म जल के स्रोतों से युक्त भीमबांध अभयारण्य मुंगेर जिले में स्थित है।"],
-  ["संजय गांधी जैविक उद्यान (Patna Zoo) की स्थापना किस वर्ष हुई थी?", "1969", "1973", "1980", "1985", "b", "पटना चिड़ियाघर 1973 में जनता के लिए खोला गया एक प्रमुख बॉटनिकल व जूलॉजिकल पार्क है।"],
-  ["बिहार में त्रिवेणी नहर किस नदी से निकाली गई है?", "सोन", "गंडक नदी", "कोसी", "कमला", "b", "पश्चिम चंपारण में त्रिवेणी नहर गंडक नदी से निकाली गई है।"],
-  ["बिहार की सबसे पुरानी नहर प्रणाली कौन सी है?", "सोन नहर प्रणाली (1874)", "त्रिवेणी नहर", "ढाका नहर", "कोसी नहर", "a", "सोन नदी पर डेहरी के पास 1874 में निर्मित सोन नहर प्रणाली बिहार की सबसे प्राचीन नहर है।"]
-];
-
-for (let i = 21; i <= 100; i++) {
-  const factIndex = (i - 21) % geoFacts.length;
-  const f = geoFacts[factIndex];
-  addQ(i, `[प्रश्न ${i}] ${f[0]}`, f[1], f[2], f[3], f[4], f[5], f[6]);
-}
-
-/* ================= QUIZ CONTROLLER ================= */
-let curIdx = 0;
-const answered = {};
-
-function initPalette() {
-  const pal = document.getElementById("palette");
-  pal.innerHTML = "";
-  for (let i = 1; i <= 100; i++) {
-    const btn = document.createElement("button");
-    btn.className = "pal-btn";
-    btn.id = "pal-" + i;
-    btn.innerText = i;
-    btn.onclick = () => { curIdx = i - 1; loadQuestion(); };
-    pal.appendChild(btn);
-  }
-}
-
-function togglePalette() {
-  document.getElementById("palette").classList.toggle("active");
-}
-
-function loadQuestion() {
-  const q = questions[curIdx];
-  const qNum = q.id;
-  const correct = q.ans;
-
-  document.getElementById("q-head").innerText = `Question ${qNum} of 100`;
-  document.getElementById("q-txt").innerText = q.text;
-  document.getElementById("stat-q").innerText = `Q: ${qNum}/100`;
-
-  const box = document.getElementById("opt-container");
-  box.innerHTML = "";
-
-  const expBox = document.getElementById("exp-box");
-  const expText = document.getElementById("exp-text");
-  expBox.classList.remove("show");
-
-  const isDone = answered[qNum] !== undefined;
-
-  q.opts.forEach(o => {
-    const btn = document.createElement("button");
-    btn.className = "opt-btn";
-    btn.innerText = o.t;
-    btn.disabled = isDone;
-
-    if (isDone) {
-      if (o.k === correct) btn.classList.add("correct");
-      if (answered[qNum] === o.k && o.k !== correct) btn.classList.add("wrong");
-    }
-
-    btn.onclick = () => {
-      answered[qNum] = o.k;
-      const palBtn = document.getElementById("pal-" + qNum);
-      if (o.k === correct) {
-        palBtn.classList.add("correct");
-      } else {
-        palBtn.classList.add("wrong");
-      }
-      updateScore();
-      loadQuestion();
-    };
-    box.appendChild(btn);
-  });
-
-  if (isDone) {
-    expText.innerText = q.exp;
-    expBox.classList.add("show");
-  }
-
-  document.querySelectorAll(".pal-btn").forEach((b, idx) => {
-    b.classList.toggle("current", idx === curIdx);
-  });
-
-  document.getElementById("btn-prev").disabled = curIdx === 0;
-  document.getElementById("btn-next").disabled = curIdx === questions.length - 1;
-}
-
-function updateScore() {
-  let cor = 0, wro = 0;
-  for (let qNum in answered) {
-    if (answered[qNum] === questions[qNum - 1].ans) cor++;
-    else wro++;
-  }
-  document.getElementById("stat-cor").innerText = `Correct: ${cor}`;
-  document.getElementById("stat-wro").innerText = `Wrong: ${wro}`;
-}
-
-function prevQ() { if (curIdx > 0) { curIdx--; loadQuestion(); } }
-function nextQ() { if (curIdx < questions.length - 1) { curIdx++; loadQuestion(); } }
-
-function showFinalResult() {
-  let cor = 0, wro = 0;
-  for (let qNum in answered) {
-    if (answered[qNum] === questions[qNum - 1].ans) cor++;
-    else wro++;
-  }
-  alert(`Test Samapt!\nKul Prashn: 100\nSahi Uttar: ${cor}\nGalat Uttar: ${wro}\nChhute Prashn: ${100 - (cor + wro)}`);
-}
-</script>
-
-</body>
-</html>
+  // 21-30: Rivers, Lakes & Waterfalls
+ 
