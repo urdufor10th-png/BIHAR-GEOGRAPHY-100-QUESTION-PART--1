@@ -315,26 +315,7 @@ const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
 
 (function() {
   if (typeof emailjs !== 'undefined' && EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
-    emailjs.init(EMAILJS_PUBLIC_KEY);
-  }
-})();
-
-/* ================= OTP VERIFICATION ================= */
-let generatedOTP = null;
-
-function handleSendOTP() {
-  const phone = document.getElementById("u_phone").value.trim();
-  if (!/^\d{10}$/.test(phone)) {
-    alert("Kripya sahi 10 ankon ka mobile number dalein.");
-    return;
-  }
-  generatedOTP = Math.floor(1000 + Math.random() * 9000).toString();
-  document.getElementById("otp-field").style.display = "block";
-  document.getElementById("otp-hint").innerText = `(Testing ke liye OTP: ${generatedOTP})`;
-  alert(`Aapka OTP hai: ${generatedOTP}`);
-  document.getElementById("btn-otp").innerText = "Resend OTP";
-}
-
+    emailjs.init(EMAILJS_PUBLIC_KEY)
 function handleVerifyAndStart() {
   const name = document.getElementById("u_name").value.trim();
   const phone = document.getElementById("u_phone").value.trim();
@@ -346,12 +327,7 @@ function handleVerifyAndStart() {
   if (!name || !phone || !state || !district) {
     alert("Kripya sabhi columns bharein.");
     return;
-  }
-  if (!generatedOTP || otpEntered !== generatedOTP) {
-    alert("Galat OTP! Kripya sahi OTP enter karein.");
-    return;
-  }
-
+  
   statusMsg.style.color = "#ef4444";
   statusMsg.innerText = "Data email par bheja ja raha hai...";
   document.getElementById("btn-start").disabled = true;
